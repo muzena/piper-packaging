@@ -1,0 +1,41 @@
+piper (0.2.901.4~bionic) bionic; urgency=emergency
+
+  * Fixes
+
+ -- Goran Vidovic (gogo) <trebelnik2@gmail.com>  Thu, 6 Sep 2018 14:21:05 +0200
+
+piper (0.2.901.3~bionic) bionic; urgency=emergency
+
+  * Fixes
+
+ -- Goran Vidovic (gogo) <trebelnik2@gmail.com>  Thu, 30 Aug 2018 23:25:05 +0200
+
+piper (0.2.901.1~bionic) bionic; urgency=emergency
+
+  * Fixes
+
+ -- Goran Vidovic (gogo) <trebelnik2@gmail.com>  Thu, 26 Jul 2018 11:48:05 +0100
+
+piper (0.2.900.3~bionic) bionic; urgency=emergency
+
+  * Fix install dependencies, remove .git folder
+
+ -- Goran Vidovic (gogo) <trebelnik2@gmail.com>  Sun, 17 Jun 2018 21:14:05 +0100
+
+piper (0.2.900.2~bionic) bionic; urgency=emergency
+
+  * Update desktop file
+
+ -- Goran Vidovic (gogo) <trebelnik2@gmail.com>  Sun, 17 Jun 2018 17:32:05 +0100
+
+piper (0.2.900.1~bionic) bionic; urgency=emergency
+
+  * Add gir1.2-rsvg-2.0 missing dependencies
+
+ -- Goran Vidovic (gogo) <trebelnik2@gmail.com>  Sun, 17 Jun 2018 17:11:05 +0100
+
+piper (0.2.900.0~bionic) bionic; urgency=emergency
+
+  * Initial release
+
+ -- Goran Vidovic (gogo) <trebelnik2@gmail.com>  Sat, 16 Jun 2018 22:06:05 +0100

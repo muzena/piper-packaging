@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+# Fix python dependencies, make python 3 symlink
+
+if [ -L "/usr/lib/python3/dist-packages/piper" ]; then
+		echo "Piper symlink exists, nothing to do"
+			echo "Continuing to start service"
+		else
+			echo "Piper symlink do not exists, creating symlink"
+			ln -s /usr/lib/python3.6/site-packages/piper /usr/lib/python3/dist-packages
+fi
+
+exit 0

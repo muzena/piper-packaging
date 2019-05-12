@@ -17,6 +17,6 @@ Homepage: https://github.com/libratbag/piper
 
 Package: piper
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, gir1.2-rsvg-2.0, python3-evdev, python3-lxml, libratbag-tools, ratbagd,
+Depends: ${shlibs:Depends}, ${misc:Depends}, gir1.2-rsvg-2.0, python3-evdev, python3-lxml, python3-gi-cairo, libratbag-tools, ratbagd,
 Description: Gaming mouse application
  Piper is a GTK+ application to configure gaming mice, using libratbag via ratbagd. In order to run Piper, ratbagd has to be running (without it, you'll get to see a pretty mouse trap).

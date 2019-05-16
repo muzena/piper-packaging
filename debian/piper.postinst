@@ -8,7 +8,7 @@ if [ -L "/usr/lib/python3/dist-packages/piper" ]; then
     echo "Piper symlink exists, nothing to do"
     echo "Continuing to start service"
 else
-    if [ $UBUNTU_CODENAME = "zesty" ] ||[ $UBUNTU_CODENAME = "bionic" ] ||[ $UBUNTU_CODENAME = "cosmic" ]; then
+    if [ $UBUNTU_CODENAME = "bionic" ] ||[ $UBUNTU_CODENAME = "cosmic" ]; then
         echo "Piper symlink do not exists, creating symlink for pytthon 3.6"
         ln -s /usr/lib/python3.6/site-packages/piper /usr/lib/python3/dist-packages
     else

@@ -12,6 +12,7 @@ else
     if [ $UBUNTU_CODENAME = "xenial" ] || [ $UBUNTU_CODENAME = "cosmic" ]; then
         ln -s /usr/lib/python3.6/site-packages/piper /usr/lib/python3/dist-packages
     else
+        echo "Piper symlink do not exists, creating symlink"
         if [ $UBUNTU_CODENAME = "disco" ] || [ $UBUNTU_CODENAME = "eoan" ]; then
             ln -s /usr/lib/python3.7/site-packages/piper /usr/lib/python3/dist-packages
         fi

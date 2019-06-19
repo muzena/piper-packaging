@@ -10,7 +10,7 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ --parallel
+	dh $@ --with python3.7 --parallel
 
 override_dh_auto_configure:
 	#meson --prefix /usr --buildtype=plain debian/build

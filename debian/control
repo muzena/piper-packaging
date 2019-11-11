@@ -5,7 +5,6 @@ Maintainer: Jente Hidskes (Hjdskes) <hjdskes@gmail.com>
 Uploaders: gogo <trebelnik2@gmail.com>
 Build-Depends: debhelper (>= 8),
                gettext,
-               gcc,
                git,
                gir1.2-rsvg-2.0,
                gtk-update-icon-cache,

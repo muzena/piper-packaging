@@ -12,7 +12,7 @@ else
         echo "Piper symlink does not exists, creating symlink for python 3.6"
         ln -s /usr/lib/python3.6/site-packages/piper /usr/lib/python3/dist-packages
     else
-        if [ $UBUNTU_CODENAME = "disco" ] || [ $UBUNTU_CODENAME = "eoan" ]; then
+        if [ $UBUNTU_CODENAME = "disco" ] || [ $UBUNTU_CODENAME = "eoan" || [ $UBUNTU_CODENAME = "focal" ]; then
             echo "Piper symlink does not exists, creating symlink for python 3.7"
             ln -s /usr/lib/python3.7/site-packages/piper /usr/lib/python3/dist-packages
         fi

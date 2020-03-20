@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Maintainer: Stephan Lachnit <stephanlachnit@protonmail.com>
 Build-Depends: debhelper (>= 8),
-               dh-sequence-python3,
+               dh-python3,
                meson, pkg-config,
                python3,
                python3-evdev,

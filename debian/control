@@ -28,7 +28,8 @@ Depends: ${misc:Depends},
          python3-lxml,
          python3-evdev,
          gettext,
-         libratbag-toolsDescription: graphical frontend for libratbag
+         libratbag-tools
+Description: graphical frontend for libratbag
  Piper is a graphical user interface to configure gaming mice. Configuration
  options include changing the resolution (DPI) of the mouse, adding and removing
  profiles, setting LED colors and changing button behaviors.

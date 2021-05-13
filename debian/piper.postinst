@@ -1,0 +1,1 @@
+PTHON_VERSION ?= $(shell pwd | tail -c 23 | cut -c-5)

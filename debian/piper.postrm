@@ -1,7 +1,9 @@
 #!/bin/sh
 set -e
 
-echo "Removing Piper symlink"
-rm /usr/lib/python3/dist-packages/piper
+if [ -L "/usr/lib/python3/dist-packages/piper" ]; then
+    echo "Removing Piper symlink"
+    rm /usr/lib/python3/dist-packages/piper
+fi
 
 exit 0

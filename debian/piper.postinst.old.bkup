@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-PYTHON_VERSION=$(python3 -V | tail -c 7 | cut -c-4 | sed -e 's/^[ \t]*//')
+PYTHON_VERSION=$(python3 -V | tail -c 7 | sed 's/ //' | cut -c-4 | sed -e 's/^[ \t]*//')
 
 # Fix python dependencies, make python 3 symlink
 

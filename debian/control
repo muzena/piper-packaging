@@ -3,6 +3,7 @@ Section: misc
 Priority: optional
 Maintainer: Stephan Lachnit <stephanlachnit@protonmail.com>
 Build-Depends: debhelper (>= 8),
+               appstream,
                dh-python,
                flake8,
                meson,

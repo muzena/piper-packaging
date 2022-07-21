@@ -6,11 +6,12 @@ PYTHON_VERSION=$(python3 -c 'import sys; print(".".join(map(str, sys.version_inf
 
 # Fix python dependencies, make python 3 symlink
 
-if [ -L "/usr/lib/python3/dist-packages/piper" ]; then
-    echo "Piper symlink exists for python $PYTHON_VERSION, nothing to do"
-    echo "Continuing to start service"
-else
-    echo "Piper symlink does not exists, creating symlink for python $PYTHON_VERSION"
-    ln -s /usr/lib/python$PYTHON_VERSION/site-packages/piper /usr/lib/python3/dist-packages
+if [ ! -d "/usr/lib/python3/dist-packages/piper" ]; then
+    if [ -L "/usr/lib/python3/dist-packages/piper" ]; then
+        echo "Piper symlink exists for python $PYTHON_VERSION, nothing to do"
+        echo "Continuing to start service"
+    else
+        echo "Piper symlink does not exists, creating symlink for python $PYTHON_VERSION"
+        ln -s /usr/lib/python$PYTHON_VERSION/site-packages/piper /usr/lib/python3/dist-packages
+    fi
 fi
-

@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Stephan Lachnit <stephanlachnit@protonmail.com>
 Build-Depends: debhelper (>= 8),
                appstream,
+               cmake,
                dh-python,
                flake8,
                gtk-update-icon-cache,
